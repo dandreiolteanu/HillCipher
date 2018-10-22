@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		13284EA5E9399B928174CA71 /* Pods_TheHillCipherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95ABFC392E3B76834750BFD6 /* Pods_TheHillCipherUITests.framework */; };
 		9580996A21790EEA00288669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580996921790EEA00288669 /* AppDelegate.swift */; };
-		9580996C21790EEA00288669 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580996B21790EEA00288669 /* MainViewController.swift */; };
 		9580996F21790EEA00288669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9580996D21790EEA00288669 /* Main.storyboard */; };
 		9580997121790EED00288669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9580997021790EED00288669 /* Assets.xcassets */; };
 		9580997421790EED00288669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9580997221790EED00288669 /* LaunchScreen.storyboard */; };
 		9580997F21790EEE00288669 /* TheHillCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580997E21790EEE00288669 /* TheHillCipherTests.swift */; };
 		9580998A21790EEE00288669 /* TheHillCipherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580998921790EEE00288669 /* TheHillCipherUITests.swift */; };
-		9580999821790EFF00288669 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580999721790EFF00288669 /* Matrix.swift */; };
-		9580999A21790F1300288669 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580999921790F1300288669 /* Extensions.swift */; };
-		9588DCAB217D1C4D00F6F9E6 /* Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9588DCAA217D1C4D00F6F9E6 /* Alphabet.swift */; };
-		9588DCAD217D1C8800F6F9E6 /* HillCipherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9588DCAC217D1C8800F6F9E6 /* HillCipherService.swift */; };
-		9588DCAF217D1D5200F6F9E6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9588DCAE217D1D5200F6F9E6 /* CustomButton.swift */; };
-		95933B95217E55DE00E1153A /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95933B94217E55DE00E1153A /* History.swift */; };
-		95933B97217E582800E1153A /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95933B96217E582800E1153A /* UserDefaultsManager.swift */; };
 		95933B99217E5B1400E1153A /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95933B98217E5B1400E1153A /* HistoryViewController.swift */; };
-		95933B9D217E5BA000E1153A /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95933B9C217E5BA000E1153A /* HistoryCell.swift */; };
+		95A75FDE217E71AA00E69C44 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A75FD8217E71A900E69C44 /* UserDefaultsManager.swift */; };
+		95A75FDF217E71AA00E69C44 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A75FD9217E71A900E69C44 /* Extensions.swift */; };
+		95A75FE0217E71AA00E69C44 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A75FDA217E71A900E69C44 /* Matrix.swift */; };
+		95A75FE1217E71AA00E69C44 /* Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A75FDB217E71A900E69C44 /* Alphabet.swift */; };
+		95A75FE2217E71AA00E69C44 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A75FDD217E71AA00E69C44 /* History.swift */; };
+		95A75FE4217E71CF00E69C44 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A75FE3217E71CF00E69C44 /* MainViewController.swift */; };
+		95A75FE6217E71E000E69C44 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A75FE5217E71E000E69C44 /* HistoryCell.swift */; };
+		95A75FE8217E71EA00E69C44 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A75FE7217E71EA00E69C44 /* CustomButton.swift */; };
+		95A75FEA217E71F400E69C44 /* HillCipherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A75FE9217E71F400E69C44 /* HillCipherService.swift */; };
 		9C36A4E6AD574BCEA4F7B825 /* Pods_TheHillCipherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCAFC775F2DE5D4BB79D567 /* Pods_TheHillCipherTests.framework */; };
 		D34AE336717546E618B5F638 /* Pods_TheHillCipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8753ACE178DC45EF00151868 /* Pods_TheHillCipher.framework */; };
 /* End PBXBuildFile section */
@@ -53,7 +53,6 @@
 		8753ACE178DC45EF00151868 /* Pods_TheHillCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheHillCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9580996621790EEA00288669 /* TheHillCipher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheHillCipher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9580996921790EEA00288669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9580996B21790EEA00288669 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "../New Group/MainViewController.swift"; sourceTree = "<group>"; };
 		9580996E21790EEA00288669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9580997021790EED00288669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9580997321790EED00288669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,15 +63,16 @@
 		9580998521790EEE00288669 /* TheHillCipherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheHillCipherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9580998921790EEE00288669 /* TheHillCipherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheHillCipherUITests.swift; sourceTree = "<group>"; };
 		9580998B21790EEE00288669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9580999721790EFF00288669 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
-		9580999921790F1300288669 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		9588DCAA217D1C4D00F6F9E6 /* Alphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alphabet.swift; sourceTree = "<group>"; };
-		9588DCAC217D1C8800F6F9E6 /* HillCipherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HillCipherService.swift; path = "../New Group/HillCipherService.swift"; sourceTree = "<group>"; };
-		9588DCAE217D1D5200F6F9E6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = "../New Group1/CustomButton.swift"; sourceTree = "<group>"; };
-		95933B94217E55DE00E1153A /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
-		95933B96217E582800E1153A /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		95933B98217E5B1400E1153A /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
-		95933B9C217E5BA000E1153A /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryCell.swift; path = TheHillCipher/HistoryCell.swift; sourceTree = SOURCE_ROOT; };
+		95A75FD8217E71A900E69C44 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		95A75FD9217E71A900E69C44 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		95A75FDA217E71A900E69C44 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		95A75FDB217E71A900E69C44 /* Alphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alphabet.swift; sourceTree = "<group>"; };
+		95A75FDD217E71AA00E69C44 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		95A75FE3217E71CF00E69C44 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		95A75FE5217E71E000E69C44 /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		95A75FE7217E71EA00E69C44 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		95A75FE9217E71F400E69C44 /* HillCipherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HillCipherService.swift; sourceTree = "<group>"; };
 		95ABFC392E3B76834750BFD6 /* Pods_TheHillCipherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheHillCipherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF5AAF776A1633A5B3B54A8 /* Pods-TheHillCipherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHillCipherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheHillCipherUITests/Pods-TheHillCipherUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EB4A873610A62B78EC04B39F /* Pods-TheHillCipher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHillCipher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheHillCipher/Pods-TheHillCipher.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,14 +145,14 @@
 		9580996821790EEA00288669 /* TheHillCipher */ = {
 			isa = PBXGroup;
 			children = (
-				9580996921790EEA00288669 /* AppDelegate.swift */,
-				9580996D21790EEA00288669 /* Main.storyboard */,
 				95933B9A217E5B5700E1153A /* ViewControllers */,
 				95933B9B217E5B9700E1153A /* Cells */,
 				95933B9F217E6DF200E1153A /* Views */,
-				95933B9E217E6DC100E1153A /* Helpers */,
 				95933BA1217E6E1600E1153A /* Services */,
-				95933BA0217E6E0900E1153A /* Models */,
+				95A75FD7217E71A900E69C44 /* Helpers */,
+				95A75FDC217E71AA00E69C44 /* Models */,
+				9580996921790EEA00288669 /* AppDelegate.swift */,
+				9580996D21790EEA00288669 /* Main.storyboard */,
 				9580997021790EED00288669 /* Assets.xcassets */,
 				9580997221790EED00288669 /* LaunchScreen.storyboard */,
 				9580997521790EED00288669 /* Info.plist */,
@@ -181,7 +181,7 @@
 		95933B9A217E5B5700E1153A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9580996B21790EEA00288669 /* MainViewController.swift */,
+				95A75FE3217E71CF00E69C44 /* MainViewController.swift */,
 				95933B98217E5B1400E1153A /* HistoryViewController.swift */,
 			);
 			path = ViewControllers;
@@ -190,46 +190,44 @@
 		95933B9B217E5B9700E1153A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				95933B9C217E5BA000E1153A /* HistoryCell.swift */,
+				95A75FE5217E71E000E69C44 /* HistoryCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		95933B9E217E6DC100E1153A /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				9580999721790EFF00288669 /* Matrix.swift */,
-				9588DCAA217D1C4D00F6F9E6 /* Alphabet.swift */,
-				95933B96217E582800E1153A /* UserDefaultsManager.swift */,
-				9580999921790F1300288669 /* Extensions.swift */,
-			);
-			name = Helpers;
-			path = Cells/Helpers;
 			sourceTree = "<group>";
 		};
 		95933B9F217E6DF200E1153A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9588DCAE217D1D5200F6F9E6 /* CustomButton.swift */,
+				95A75FE7217E71EA00E69C44 /* CustomButton.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		95933BA0217E6E0900E1153A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				95933B94217E55DE00E1153A /* History.swift */,
-			);
-			name = Models;
-			path = Cells/Helpers/Models;
 			sourceTree = "<group>";
 		};
 		95933BA1217E6E1600E1153A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				9588DCAC217D1C8800F6F9E6 /* HillCipherService.swift */,
+				95A75FE9217E71F400E69C44 /* HillCipherService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		95A75FD7217E71A900E69C44 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				95A75FD8217E71A900E69C44 /* UserDefaultsManager.swift */,
+				95A75FD9217E71A900E69C44 /* Extensions.swift */,
+				95A75FDA217E71A900E69C44 /* Matrix.swift */,
+				95A75FDB217E71A900E69C44 /* Alphabet.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		95A75FDC217E71AA00E69C44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95A75FDD217E71AA00E69C44 /* History.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		DCB3D829F66D59AA0897D05E /* Frameworks */ = {
@@ -454,17 +452,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9580996C21790EEA00288669 /* MainViewController.swift in Sources */,
-				9588DCAD217D1C8800F6F9E6 /* HillCipherService.swift in Sources */,
-				95933B95217E55DE00E1153A /* History.swift in Sources */,
+				95A75FE0217E71AA00E69C44 /* Matrix.swift in Sources */,
+				95A75FE4217E71CF00E69C44 /* MainViewController.swift in Sources */,
+				95A75FE2217E71AA00E69C44 /* History.swift in Sources */,
 				95933B99217E5B1400E1153A /* HistoryViewController.swift in Sources */,
-				9588DCAB217D1C4D00F6F9E6 /* Alphabet.swift in Sources */,
+				95A75FEA217E71F400E69C44 /* HillCipherService.swift in Sources */,
+				95A75FDF217E71AA00E69C44 /* Extensions.swift in Sources */,
+				95A75FDE217E71AA00E69C44 /* UserDefaultsManager.swift in Sources */,
+				95A75FE8217E71EA00E69C44 /* CustomButton.swift in Sources */,
+				95A75FE1217E71AA00E69C44 /* Alphabet.swift in Sources */,
 				9580996A21790EEA00288669 /* AppDelegate.swift in Sources */,
-				95933B97217E582800E1153A /* UserDefaultsManager.swift in Sources */,
-				9588DCAF217D1D5200F6F9E6 /* CustomButton.swift in Sources */,
-				9580999821790EFF00288669 /* Matrix.swift in Sources */,
-				9580999A21790F1300288669 /* Extensions.swift in Sources */,
-				95933B9D217E5BA000E1153A /* HistoryCell.swift in Sources */,
+				95A75FE6217E71E000E69C44 /* HistoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
