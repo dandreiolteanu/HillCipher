@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13284EA5E9399B928174CA71 /* Pods_TheHillCipherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95ABFC392E3B76834750BFD6 /* Pods_TheHillCipherUITests.framework */; };
+		9580996A21790EEA00288669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580996921790EEA00288669 /* AppDelegate.swift */; };
+		9580996C21790EEA00288669 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580996B21790EEA00288669 /* MainViewController.swift */; };
+		9580996F21790EEA00288669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9580996D21790EEA00288669 /* Main.storyboard */; };
+		9580997121790EED00288669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9580997021790EED00288669 /* Assets.xcassets */; };
+		9580997421790EED00288669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9580997221790EED00288669 /* LaunchScreen.storyboard */; };
+		9580997F21790EEE00288669 /* TheHillCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580997E21790EEE00288669 /* TheHillCipherTests.swift */; };
+		9580998A21790EEE00288669 /* TheHillCipherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580998921790EEE00288669 /* TheHillCipherUITests.swift */; };
+		9580999821790EFF00288669 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580999721790EFF00288669 /* Matrix.swift */; };
+		9580999A21790F1300288669 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580999921790F1300288669 /* Extensions.swift */; };
+		9588DCAB217D1C4D00F6F9E6 /* Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9588DCAA217D1C4D00F6F9E6 /* Alphabet.swift */; };
+		9588DCAD217D1C8800F6F9E6 /* HillCipherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9588DCAC217D1C8800F6F9E6 /* HillCipherService.swift */; };
+		9588DCAF217D1D5200F6F9E6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9588DCAE217D1D5200F6F9E6 /* CustomButton.swift */; };
+		95933B95217E55DE00E1153A /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95933B94217E55DE00E1153A /* History.swift */; };
+		95933B97217E582800E1153A /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95933B96217E582800E1153A /* UserDefaultsManager.swift */; };
+		95933B99217E5B1400E1153A /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95933B98217E5B1400E1153A /* HistoryViewController.swift */; };
+		95933B9D217E5BA000E1153A /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95933B9C217E5BA000E1153A /* HistoryCell.swift */; };
+		9C36A4E6AD574BCEA4F7B825 /* Pods_TheHillCipherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCAFC775F2DE5D4BB79D567 /* Pods_TheHillCipherTests.framework */; };
+		D34AE336717546E618B5F638 /* Pods_TheHillCipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8753ACE178DC45EF00151868 /* Pods_TheHillCipher.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9580997B21790EEE00288669 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9580995E21790EEA00288669 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9580996521790EEA00288669;
+			remoteInfo = TheHillCipher;
+		};
+		9580998621790EEE00288669 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9580995E21790EEA00288669 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9580996521790EEA00288669;
+			remoteInfo = TheHillCipher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CCAFC775F2DE5D4BB79D567 /* Pods_TheHillCipherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheHillCipherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11CC7058CC5546B4302C9174 /* Pods-TheHillCipher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHillCipher.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheHillCipher/Pods-TheHillCipher.release.xcconfig"; sourceTree = "<group>"; };
+		39507283A985E5B97E0FF02A /* Pods-TheHillCipherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHillCipherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheHillCipherUITests/Pods-TheHillCipherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		412EC8096DB46306DA4828B2 /* Pods-TheHillCipherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHillCipherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheHillCipherTests/Pods-TheHillCipherTests.release.xcconfig"; sourceTree = "<group>"; };
+		8753ACE178DC45EF00151868 /* Pods_TheHillCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheHillCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9580996621790EEA00288669 /* TheHillCipher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheHillCipher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9580996921790EEA00288669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9580996B21790EEA00288669 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "../New Group/MainViewController.swift"; sourceTree = "<group>"; };
+		9580996E21790EEA00288669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9580997021790EED00288669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9580997321790EED00288669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9580997521790EED00288669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9580997A21790EEE00288669 /* TheHillCipherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheHillCipherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9580997E21790EEE00288669 /* TheHillCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheHillCipherTests.swift; sourceTree = "<group>"; };
+		9580998021790EEE00288669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9580998521790EEE00288669 /* TheHillCipherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheHillCipherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9580998921790EEE00288669 /* TheHillCipherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheHillCipherUITests.swift; sourceTree = "<group>"; };
+		9580998B21790EEE00288669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9580999721790EFF00288669 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		9580999921790F1300288669 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9588DCAA217D1C4D00F6F9E6 /* Alphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alphabet.swift; sourceTree = "<group>"; };
+		9588DCAC217D1C8800F6F9E6 /* HillCipherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HillCipherService.swift; path = "../New Group/HillCipherService.swift"; sourceTree = "<group>"; };
+		9588DCAE217D1D5200F6F9E6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = "../New Group1/CustomButton.swift"; sourceTree = "<group>"; };
+		95933B94217E55DE00E1153A /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		95933B96217E582800E1153A /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		95933B98217E5B1400E1153A /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		95933B9C217E5BA000E1153A /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryCell.swift; path = TheHillCipher/HistoryCell.swift; sourceTree = SOURCE_ROOT; };
+		95ABFC392E3B76834750BFD6 /* Pods_TheHillCipherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheHillCipherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF5AAF776A1633A5B3B54A8 /* Pods-TheHillCipherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHillCipherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheHillCipherUITests/Pods-TheHillCipherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EB4A873610A62B78EC04B39F /* Pods-TheHillCipher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHillCipher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheHillCipher/Pods-TheHillCipher.debug.xcconfig"; sourceTree = "<group>"; };
+		F9592CACD832997C197E4DE7 /* Pods-TheHillCipherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHillCipherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheHillCipherTests/Pods-TheHillCipherTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9580996321790EEA00288669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34AE336717546E618B5F638 /* Pods_TheHillCipher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9580997721790EEE00288669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C36A4E6AD574BCEA4F7B825 /* Pods_TheHillCipherTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9580998221790EEE00288669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13284EA5E9399B928174CA71 /* Pods_TheHillCipherUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20030257F3E4217744F9A3D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB4A873610A62B78EC04B39F /* Pods-TheHillCipher.debug.xcconfig */,
+				11CC7058CC5546B4302C9174 /* Pods-TheHillCipher.release.xcconfig */,
+				F9592CACD832997C197E4DE7 /* Pods-TheHillCipherTests.debug.xcconfig */,
+				412EC8096DB46306DA4828B2 /* Pods-TheHillCipherTests.release.xcconfig */,
+				39507283A985E5B97E0FF02A /* Pods-TheHillCipherUITests.debug.xcconfig */,
+				ADF5AAF776A1633A5B3B54A8 /* Pods-TheHillCipherUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9580995D21790EEA00288669 = {
+			isa = PBXGroup;
+			children = (
+				9580996821790EEA00288669 /* TheHillCipher */,
+				9580997D21790EEE00288669 /* TheHillCipherTests */,
+				9580998821790EEE00288669 /* TheHillCipherUITests */,
+				9580996721790EEA00288669 /* Products */,
+				20030257F3E4217744F9A3D6 /* Pods */,
+				DCB3D829F66D59AA0897D05E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9580996721790EEA00288669 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9580996621790EEA00288669 /* TheHillCipher.app */,
+				9580997A21790EEE00288669 /* TheHillCipherTests.xctest */,
+				9580998521790EEE00288669 /* TheHillCipherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9580996821790EEA00288669 /* TheHillCipher */ = {
+			isa = PBXGroup;
+			children = (
+				9580996921790EEA00288669 /* AppDelegate.swift */,
+				9580996D21790EEA00288669 /* Main.storyboard */,
+				95933B9A217E5B5700E1153A /* ViewControllers */,
+				95933B9B217E5B9700E1153A /* Cells */,
+				95933B9F217E6DF200E1153A /* Views */,
+				95933B9E217E6DC100E1153A /* Helpers */,
+				95933BA1217E6E1600E1153A /* Services */,
+				95933BA0217E6E0900E1153A /* Models */,
+				9580997021790EED00288669 /* Assets.xcassets */,
+				9580997221790EED00288669 /* LaunchScreen.storyboard */,
+				9580997521790EED00288669 /* Info.plist */,
+			);
+			path = TheHillCipher;
+			sourceTree = "<group>";
+		};
+		9580997D21790EEE00288669 /* TheHillCipherTests */ = {
+			isa = PBXGroup;
+			children = (
+				9580997E21790EEE00288669 /* TheHillCipherTests.swift */,
+				9580998021790EEE00288669 /* Info.plist */,
+			);
+			path = TheHillCipherTests;
+			sourceTree = "<group>";
+		};
+		9580998821790EEE00288669 /* TheHillCipherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9580998921790EEE00288669 /* TheHillCipherUITests.swift */,
+				9580998B21790EEE00288669 /* Info.plist */,
+			);
+			path = TheHillCipherUITests;
+			sourceTree = "<group>";
+		};
+		95933B9A217E5B5700E1153A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9580996B21790EEA00288669 /* MainViewController.swift */,
+				95933B98217E5B1400E1153A /* HistoryViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		95933B9B217E5B9700E1153A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				95933B9C217E5BA000E1153A /* HistoryCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		95933B9E217E6DC100E1153A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9580999721790EFF00288669 /* Matrix.swift */,
+				9588DCAA217D1C4D00F6F9E6 /* Alphabet.swift */,
+				95933B96217E582800E1153A /* UserDefaultsManager.swift */,
+				9580999921790F1300288669 /* Extensions.swift */,
+			);
+			name = Helpers;
+			path = Cells/Helpers;
+			sourceTree = "<group>";
+		};
+		95933B9F217E6DF200E1153A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9588DCAE217D1D5200F6F9E6 /* CustomButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95933BA0217E6E0900E1153A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95933B94217E55DE00E1153A /* History.swift */,
+			);
+			name = Models;
+			path = Cells/Helpers/Models;
+			sourceTree = "<group>";
+		};
+		95933BA1217E6E1600E1153A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9588DCAC217D1C8800F6F9E6 /* HillCipherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DCB3D829F66D59AA0897D05E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8753ACE178DC45EF00151868 /* Pods_TheHillCipher.framework */,
+				0CCAFC775F2DE5D4BB79D567 /* Pods_TheHillCipherTests.framework */,
+				95ABFC392E3B76834750BFD6 /* Pods_TheHillCipherUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9580996521790EEA00288669 /* TheHillCipher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9580998E21790EEE00288669 /* Build configuration list for PBXNativeTarget "TheHillCipher" */;
+			buildPhases = (
+				6863CCC1DF34CC5BD559485A /* [CP] Check Pods Manifest.lock */,
+				9580996221790EEA00288669 /* Sources */,
+				9580996321790EEA00288669 /* Frameworks */,
+				9580996421790EEA00288669 /* Resources */,
+				A925EAD079D64C9CA3E04D43 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheHillCipher;
+			productName = TheHillCipher;
+			productReference = 9580996621790EEA00288669 /* TheHillCipher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9580997921790EEE00288669 /* TheHillCipherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9580999121790EEE00288669 /* Build configuration list for PBXNativeTarget "TheHillCipherTests" */;
+			buildPhases = (
+				700E7EDA919C7A74A6714906 /* [CP] Check Pods Manifest.lock */,
+				9580997621790EEE00288669 /* Sources */,
+				9580997721790EEE00288669 /* Frameworks */,
+				9580997821790EEE00288669 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9580997C21790EEE00288669 /* PBXTargetDependency */,
+			);
+			name = TheHillCipherTests;
+			productName = TheHillCipherTests;
+			productReference = 9580997A21790EEE00288669 /* TheHillCipherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9580998421790EEE00288669 /* TheHillCipherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9580999421790EEE00288669 /* Build configuration list for PBXNativeTarget "TheHillCipherUITests" */;
+			buildPhases = (
+				C125D2CD67A4526BE8BAE4AC /* [CP] Check Pods Manifest.lock */,
+				9580998121790EEE00288669 /* Sources */,
+				9580998221790EEE00288669 /* Frameworks */,
+				9580998321790EEE00288669 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9580998721790EEE00288669 /* PBXTargetDependency */,
+			);
+			name = TheHillCipherUITests;
+			productName = TheHillCipherUITests;
+			productReference = 9580998521790EEE00288669 /* TheHillCipherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9580995E21790EEA00288669 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Andrei Olteanu";
+				TargetAttributes = {
+					9580996521790EEA00288669 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					9580997921790EEE00288669 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 9580996521790EEA00288669;
+					};
+					9580998421790EEE00288669 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 9580996521790EEA00288669;
+					};
+				};
+			};
+			buildConfigurationList = 9580996121790EEA00288669 /* Build configuration list for PBXProject "TheHillCipher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9580995D21790EEA00288669;
+			productRefGroup = 9580996721790EEA00288669 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9580996521790EEA00288669 /* TheHillCipher */,
+				9580997921790EEE00288669 /* TheHillCipherTests */,
+				9580998421790EEE00288669 /* TheHillCipherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9580996421790EEA00288669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9580997421790EED00288669 /* LaunchScreen.storyboard in Resources */,
+				9580997121790EED00288669 /* Assets.xcassets in Resources */,
+				9580996F21790EEA00288669 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9580997821790EEE00288669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9580998321790EEE00288669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6863CCC1DF34CC5BD559485A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheHillCipher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		700E7EDA919C7A74A6714906 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheHillCipherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A925EAD079D64C9CA3E04D43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TheHillCipher/Pods-TheHillCipher-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheHillCipher/Pods-TheHillCipher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C125D2CD67A4526BE8BAE4AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheHillCipherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9580996221790EEA00288669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9580996C21790EEA00288669 /* MainViewController.swift in Sources */,
+				9588DCAD217D1C8800F6F9E6 /* HillCipherService.swift in Sources */,
+				95933B95217E55DE00E1153A /* History.swift in Sources */,
+				95933B99217E5B1400E1153A /* HistoryViewController.swift in Sources */,
+				9588DCAB217D1C4D00F6F9E6 /* Alphabet.swift in Sources */,
+				9580996A21790EEA00288669 /* AppDelegate.swift in Sources */,
+				95933B97217E582800E1153A /* UserDefaultsManager.swift in Sources */,
+				9588DCAF217D1D5200F6F9E6 /* CustomButton.swift in Sources */,
+				9580999821790EFF00288669 /* Matrix.swift in Sources */,
+				9580999A21790F1300288669 /* Extensions.swift in Sources */,
+				95933B9D217E5BA000E1153A /* HistoryCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9580997621790EEE00288669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9580997F21790EEE00288669 /* TheHillCipherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9580998121790EEE00288669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9580998A21790EEE00288669 /* TheHillCipherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9580997C21790EEE00288669 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9580996521790EEA00288669 /* TheHillCipher */;
+			targetProxy = 9580997B21790EEE00288669 /* PBXContainerItemProxy */;
+		};
+		9580998721790EEE00288669 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9580996521790EEA00288669 /* TheHillCipher */;
+			targetProxy = 9580998621790EEE00288669 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9580996D21790EEA00288669 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9580996E21790EEA00288669 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9580997221790EED00288669 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9580997321790EED00288669 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9580998C21790EEE00288669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9580998D21790EEE00288669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9580998F21790EEE00288669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB4A873610A62B78EC04B39F /* Pods-TheHillCipher.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VAJ32PD5M;
+				INFOPLIST_FILE = TheHillCipher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreiolteanu.TheHillCipher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9580999021790EEE00288669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11CC7058CC5546B4302C9174 /* Pods-TheHillCipher.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VAJ32PD5M;
+				INFOPLIST_FILE = TheHillCipher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreiolteanu.TheHillCipher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9580999221790EEE00288669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9592CACD832997C197E4DE7 /* Pods-TheHillCipherTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VAJ32PD5M;
+				INFOPLIST_FILE = TheHillCipherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreiolteanu.TheHillCipherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheHillCipher.app/TheHillCipher";
+			};
+			name = Debug;
+		};
+		9580999321790EEE00288669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 412EC8096DB46306DA4828B2 /* Pods-TheHillCipherTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VAJ32PD5M;
+				INFOPLIST_FILE = TheHillCipherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreiolteanu.TheHillCipherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheHillCipher.app/TheHillCipher";
+			};
+			name = Release;
+		};
+		9580999521790EEE00288669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39507283A985E5B97E0FF02A /* Pods-TheHillCipherUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VAJ32PD5M;
+				INFOPLIST_FILE = TheHillCipherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreiolteanu.TheHillCipherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheHillCipher;
+			};
+			name = Debug;
+		};
+		9580999621790EEE00288669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF5AAF776A1633A5B3B54A8 /* Pods-TheHillCipherUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VAJ32PD5M;
+				INFOPLIST_FILE = TheHillCipherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreiolteanu.TheHillCipherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheHillCipher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9580996121790EEA00288669 /* Build configuration list for PBXProject "TheHillCipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9580998C21790EEE00288669 /* Debug */,
+				9580998D21790EEE00288669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9580998E21790EEE00288669 /* Build configuration list for PBXNativeTarget "TheHillCipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9580998F21790EEE00288669 /* Debug */,
+				9580999021790EEE00288669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9580999121790EEE00288669 /* Build configuration list for PBXNativeTarget "TheHillCipherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9580999221790EEE00288669 /* Debug */,
+				9580999321790EEE00288669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9580999421790EEE00288669 /* Build configuration list for PBXNativeTarget "TheHillCipherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9580999521790EEE00288669 /* Debug */,
+				9580999621790EEE00288669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9580995E21790EEA00288669 /* Project object */;
+}
