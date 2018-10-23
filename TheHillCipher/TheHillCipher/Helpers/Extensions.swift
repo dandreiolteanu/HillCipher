@@ -72,9 +72,9 @@ extension UIButton {
 }
 
 extension UIViewController {
-    func showAlert(with title: String) {
+    func showAlert(with title: String, actionHandler: ((UIAlertAction) -> Void)? = nil) {
         let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: actionHandler))
         self.present(alertController, animated: true, completion: nil)
     }
 }

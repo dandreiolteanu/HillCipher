@@ -97,8 +97,10 @@ final class MainViewController: UIViewController, StoryboardBased {
     }
 
     @IBAction func encryptButtonTouched(_ sender: Any) {
-        guard let encryptionMatrixText = encryptionMatrixTextField.text else { return }
-        guard let plaintext = plaintextTextField.text else { return }
+        guard let encryptionMatrixText = encryptionMatrixTextField.text, let plaintext = plaintextTextField.text else {
+            showAlert(with: "Fields cannot be empty")
+            return
+        }
 
         DispatchQueue.main.async {
             self.isLoadingSubject.onNext(true)
@@ -123,8 +125,10 @@ final class MainViewController: UIViewController, StoryboardBased {
     }
     
     @IBAction func decryptButtonTouched(_ sender: Any) {
-        guard let encryptionMatrixText = encryptionMatrixTextField.text else { return }
-        guard let encryptionKey = encryptionKeyTextField.text else { return }
+        guard let encryptionMatrixText = encryptionMatrixTextField.text, let encryptionKey = encryptionKeyTextField.text else {
+            showAlert(with: "Fields cannot be empty")
+            return
+        }
 
         DispatchQueue.main.async {
             self.isLoadingSubject.onNext(true)

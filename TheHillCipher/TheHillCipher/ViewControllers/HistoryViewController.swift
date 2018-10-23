@@ -39,6 +39,18 @@ final class HistoryViewController: UIViewController, StoryboardBased {
         tableView.tableFooterView = UIView()
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 140
+
+        showIsEmptyIfNeeded()
+    }
+
+    // MARK: - Private Methods
+
+    func showIsEmptyIfNeeded() {
+        if history.isEmpty {
+            showAlert(with: "History is Empty 🔐") { _ in
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
     }
 }
 
@@ -82,5 +94,7 @@ extension HistoryViewController: UITableViewDelegate {
         tableView.beginUpdates()
         tableView.deleteRows(at: [indexPath], with: .automatic)
         tableView.endUpdates()
+
+        showIsEmptyIfNeeded()
     }
 }

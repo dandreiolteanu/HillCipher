@@ -21,7 +21,7 @@
                                 <rect key="frame" x="31" y="202" width="352" height="40"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzh-S4-ZTy" customClass="RoundedAppleButton" customModule="TheHillCipher" customModuleProvider="target">
                                 <rect key="frame" x="41.5" y="702" width="331" height="50"/>
