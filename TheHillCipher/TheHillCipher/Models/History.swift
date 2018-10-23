@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andrei Olteanu. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum HistoryType: Codable {
     case encryption
@@ -43,6 +43,14 @@ enum HistoryType: Codable {
 
     var stringValue: String {
         return self == .encryption ? "Encryption" : "Decryption"
+    }
+
+    var image: UIImage? {
+        return self == .encryption ? UIImage(named: "icn_encryption") : UIImage(named: "icn_decryption")
+    }
+
+    var color: UIColor {
+        return self == .encryption ? #colorLiteral(red: 0.003921568627, green: 0.5450980392, blue: 1, alpha: 1) : #colorLiteral(red: 1, green: 0.05490196078, blue: 0.05490196078, alpha: 1)
     }
 }
 

@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-final class MainViewController: UIViewController {
+final class MainViewController: UIViewController, StoryboardBased {
 
     // MARK: - Outlets
 
@@ -38,6 +38,10 @@ final class MainViewController: UIViewController {
     // MARK: - Private Methods
 
     private func setupView() {
+        navigationItem.title = "Hill Cipher"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "History", style: .plain, target: self, action: #selector(rightBarButtonTouched))
+
         spinner.hidesWhenStopped = true
         encryptButton.setEnabled(false)
         decryptButton.setEnabled(false)
@@ -78,6 +82,12 @@ final class MainViewController: UIViewController {
         var newHistory = userDefaultsManager.history
         newHistory.append(historyItem)
         userDefaultsManager.history = newHistory
+    }
+
+    @objc private func rightBarButtonTouched() {
+        let viewController = HistoryViewController.instantiate()
+        viewController.delegate = self
+        navigationController?.pushViewController(viewController, animated: true)
     }
 
     // MARK: - Actions
@@ -139,3 +149,15 @@ final class MainViewController: UIViewController {
     }
 }
 
+// MARK: - HistoryViewControllerDelegate
+
+extension MainViewController: HistoryViewControllerDelegate {
+    func didSelectHistoryItem(_ historyItem: History) {
+        plaintextTextField.text = historyItem.plaintext
+        encryptionKeyTextField.text = historyItem.encryptionKey
+        encryptionMatrixTextField.text = historyItem.encryptionMatrix
+
+        encryptButton.setEnabled(true)
+        decryptButton.setEnabled(true)
+    }
+}

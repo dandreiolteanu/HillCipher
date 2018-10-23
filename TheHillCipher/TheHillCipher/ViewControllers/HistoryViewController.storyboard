@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6XD-Ky-xD2">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--History-->
+        <scene sceneID="zNy-Sd-DAh">
+            <objects>
+                <viewController id="6XD-Ky-xD2" customClass="HistoryViewController" customModule="TheHillCipher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nWX-RU-Dxr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S0f-y2-bZA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HistoryCell" rowHeight="139" id="hYN-nY-4JU" customClass="HistoryCell" customModule="TheHillCipher" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="139"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hYN-nY-4JU" id="rBK-be-UMr">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="138.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plaintext: @example" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNb-Mf-Lcv">
+                                                    <rect key="frame" x="20" y="50.5" width="332" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EncryptionKey: @example" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CR5-VY-OHT">
+                                                    <rect key="frame" x="20" y="79" width="332" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Matrix: @example" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sib-Ys-A7m">
+                                                    <rect key="frame" x="20" y="107.5" width="136.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_encryption" translatesAutoresizingMaskIntoConstraints="NO" id="qcM-PA-1ph">
+                                                    <rect key="frame" x="20" y="11" width="26" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26" id="A6c-jR-LNQ"/>
+                                                        <constraint firstAttribute="width" constant="26" id="c9y-Uo-eHE"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIF-XP-4T4">
+                                                    <rect key="frame" x="54" y="12" width="45" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="sib-Ys-A7m" secondAttribute="bottom" id="1Ra-PT-NUU"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="CR5-VY-OHT" secondAttribute="trailing" constant="16" id="5Zp-dX-3dF"/>
+                                                <constraint firstItem="bIF-XP-4T4" firstAttribute="centerY" secondItem="qcM-PA-1ph" secondAttribute="centerY" id="64S-jr-0cp"/>
+                                                <constraint firstItem="sib-Ys-A7m" firstAttribute="leading" secondItem="rBK-be-UMr" secondAttribute="leadingMargin" id="6yk-gq-Ai1"/>
+                                                <constraint firstItem="sib-Ys-A7m" firstAttribute="top" secondItem="CR5-VY-OHT" secondAttribute="bottom" constant="8" id="Gxf-1H-kJ2"/>
+                                                <constraint firstItem="qcM-PA-1ph" firstAttribute="leading" secondItem="rBK-be-UMr" secondAttribute="leadingMargin" id="KmK-5W-tkb"/>
+                                                <constraint firstItem="bIF-XP-4T4" firstAttribute="leading" secondItem="qcM-PA-1ph" secondAttribute="trailing" constant="8" id="NNG-t5-CCF"/>
+                                                <constraint firstItem="CR5-VY-OHT" firstAttribute="leading" secondItem="rBK-be-UMr" secondAttribute="leadingMargin" id="P6V-0h-cr2"/>
+                                                <constraint firstItem="qcM-PA-1ph" firstAttribute="top" secondItem="rBK-be-UMr" secondAttribute="topMargin" id="WUP-Wd-PqU"/>
+                                                <constraint firstItem="NNb-Mf-Lcv" firstAttribute="leading" secondItem="rBK-be-UMr" secondAttribute="leadingMargin" id="XMH-VW-JO3"/>
+                                                <constraint firstItem="CR5-VY-OHT" firstAttribute="top" secondItem="NNb-Mf-Lcv" secondAttribute="bottom" constant="8" id="dI7-pc-QEg"/>
+                                                <constraint firstItem="NNb-Mf-Lcv" firstAttribute="top" secondItem="qcM-PA-1ph" secondAttribute="bottom" constant="13.5" id="l4g-OJ-NcH"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="NNb-Mf-Lcv" secondAttribute="trailing" constant="16" id="pMH-yH-yYZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="encryptionKeyLabel" destination="CR5-VY-OHT" id="UN7-ba-ejR"/>
+                                            <outlet property="iconImageView" destination="qcM-PA-1ph" id="znv-Cs-qSa"/>
+                                            <outlet property="matrixLabel" destination="sib-Ys-A7m" id="qoh-xE-VLN"/>
+                                            <outlet property="plaintextLabel" destination="NNb-Mf-Lcv" id="zDS-TA-kS4"/>
+                                            <outlet property="typeLabel" destination="bIF-XP-4T4" id="85N-jb-Ye3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S0f-y2-bZA" firstAttribute="leading" secondItem="63F-z1-CFD" secondAttribute="leading" id="P7k-cP-BqT"/>
+                            <constraint firstItem="S0f-y2-bZA" firstAttribute="trailing" secondItem="63F-z1-CFD" secondAttribute="trailing" id="REN-2l-gP7"/>
+                            <constraint firstItem="S0f-y2-bZA" firstAttribute="bottom" secondItem="63F-z1-CFD" secondAttribute="bottom" id="dRm-sW-3gZ"/>
+                            <constraint firstItem="S0f-y2-bZA" firstAttribute="top" secondItem="63F-z1-CFD" secondAttribute="top" id="zK4-xz-AEP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="63F-z1-CFD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="History" largeTitleDisplayMode="never" id="g2A-ZJ-4OV"/>
+                    <connections>
+                        <outlet property="tableView" destination="S0f-y2-bZA" id="nRt-Aa-ilM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iCP-eh-HG5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676.8115942028987" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icn_encryption" width="40" height="40"/>
+    </resources>
+</document>

@@ -16,13 +16,16 @@ class HistoryCell: UITableViewCell {
     @IBOutlet weak var plaintextLabel: UILabel!
     @IBOutlet weak var encryptionKeyLabel: UILabel!
     @IBOutlet weak var matrixLabel: UILabel!
+    @IBOutlet weak var iconImageView: UIImageView!
 
     // MARK: - Public Methods
 
     public func configureCell(with history: History) {
         self.typeLabel.text = history.type.stringValue
+        self.typeLabel.textColor = history.type.color
         self.plaintextLabel.text = "Plaintext: \(history.plaintext.lowercased())"
         self.encryptionKeyLabel.text = "EncryptionKey: \(history.encryptionKey.uppercased())"
         self.matrixLabel.text = "Matrix: \(history.encryptionMatrix)"
+        self.iconImageView.image = history.type.image
     }
 }

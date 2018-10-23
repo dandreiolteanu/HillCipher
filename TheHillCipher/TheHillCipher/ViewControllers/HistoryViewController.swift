@@ -8,11 +8,19 @@
 
 import UIKit
 
-final class HistoryViewController: UIViewController {
+protocol HistoryViewControllerDelegate: class {
+    func didSelectHistoryItem(_ historyItem: History)
+}
+
+final class HistoryViewController: UIViewController, StoryboardBased {
 
     // MARK: - Outlets
 
     @IBOutlet weak var tableView: UITableView!
+
+    // MARK: - Public Properties
+
+    weak var delegate: HistoryViewControllerDelegate?
 
     // MARK: - Private Properties
 
@@ -23,6 +31,8 @@ final class HistoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "History"
+        navigationItem.largeTitleDisplayMode = .never
 
         tableView.dataSource = self
         tableView.delegate = self
@@ -54,6 +64,9 @@ extension HistoryViewController: UITableViewDataSource {
 extension HistoryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+
+        delegate?.didSelectHistoryItem(history[indexPath.row])
+        navigationController?.popViewController(animated: true)
     }
 
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

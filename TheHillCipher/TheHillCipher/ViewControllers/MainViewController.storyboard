@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jtx-qZ-Daz">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hill Cipher-->
+        <scene sceneID="ibC-fl-gYn">
+            <objects>
+                <viewController id="Jtx-qZ-Daz" customClass="MainViewController" customModule="TheHillCipher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="phi-Kx-ool">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xJH-oX-YIB">
+                                <rect key="frame" x="31" y="202" width="352" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzh-S4-ZTy" customClass="RoundedAppleButton" customModule="TheHillCipher" customModuleProvider="target">
+                                <rect key="frame" x="41.5" y="702" width="331" height="50"/>
+                                <state key="normal" title="Encrypt"/>
+                                <connections>
+                                    <action selector="encryptButtonTouched:" destination="Jtx-qZ-Daz" eventType="touchUpInside" id="4Hs-zp-yt5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5o-ML-lom" customClass="RoundedAppleButton" customModule="TheHillCipher" customModuleProvider="target">
+                                <rect key="frame" x="41.5" y="782" width="331" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Eh6-at-tHF"/>
+                                </constraints>
+                                <state key="normal" title="Decrypt"/>
+                                <connections>
+                                    <action selector="decryptButtonTouched:" destination="Jtx-qZ-Daz" eventType="touchUpInside" id="bAu-ue-yDw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plaintext" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXm-tQ-c4U">
+                                <rect key="frame" x="20" y="69" width="384" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encryption Key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbY-NA-aib">
+                                <rect key="frame" x="20" y="165.5" width="384" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="rpr-SQ-Zti">
+                                <rect key="frame" x="20" y="262" width="176.5" height="47"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encryption Matrix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tza-CL-fIf">
+                                        <rect key="frame" x="0.0" y="0.0" width="176.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example: 11,8,3,7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhc-MH-JCe">
+                                        <rect key="frame" x="0.0" y="27.5" width="176.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PhC-2F-7fh">
+                                <rect key="frame" x="31" y="105.5" width="352" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="w1I-75-rxy"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aiT-u3-MYx">
+                                <rect key="frame" x="31" y="319" width="352" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oU-3u-VHA">
+                                <rect key="frame" x="206.5" y="367" width="1" height="327"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="uqz-Sx-JvQ"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="T6R-46-ShJ">
+                                <rect key="frame" x="188.5" y="512" width="37" height="37"/>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="1TC-Bv-atY" firstAttribute="trailing" secondItem="FbY-NA-aib" secondAttribute="trailing" constant="10" id="5jD-Ko-B7T"/>
+                            <constraint firstItem="q5o-ML-lom" firstAttribute="centerX" secondItem="phi-Kx-ool" secondAttribute="centerX" id="71m-zK-v2y"/>
+                            <constraint firstItem="aiT-u3-MYx" firstAttribute="top" secondItem="rpr-SQ-Zti" secondAttribute="bottom" constant="10" id="7cC-o1-Fda"/>
+                            <constraint firstItem="0oU-3u-VHA" firstAttribute="top" secondItem="aiT-u3-MYx" secondAttribute="bottom" constant="8" id="9Z4-ky-esr"/>
+                            <constraint firstItem="1TC-Bv-atY" firstAttribute="trailing" secondItem="NXm-tQ-c4U" secondAttribute="trailing" constant="10" id="ATe-bi-NSN"/>
+                            <constraint firstItem="FbY-NA-aib" firstAttribute="leading" secondItem="1TC-Bv-atY" secondAttribute="leading" constant="20" id="BD6-kr-Mxf"/>
+                            <constraint firstItem="rpr-SQ-Zti" firstAttribute="leading" secondItem="1TC-Bv-atY" secondAttribute="leading" constant="20" id="BhX-gR-1T5"/>
+                            <constraint firstItem="NXm-tQ-c4U" firstAttribute="top" secondItem="1TC-Bv-atY" secondAttribute="top" constant="25" id="FYY-1q-Ovo"/>
+                            <constraint firstItem="FbY-NA-aib" firstAttribute="top" secondItem="PhC-2F-7fh" secondAttribute="bottom" constant="20" id="FqD-eF-6y0"/>
+                            <constraint firstItem="q5o-ML-lom" firstAttribute="width" secondItem="phi-Kx-ool" secondAttribute="width" multiplier="0.8" id="Gkt-T5-jwJ"/>
+                            <constraint firstItem="PhC-2F-7fh" firstAttribute="centerX" secondItem="phi-Kx-ool" secondAttribute="centerX" id="IZ8-R4-Hfm"/>
+                            <constraint firstItem="xJH-oX-YIB" firstAttribute="width" secondItem="PhC-2F-7fh" secondAttribute="width" id="J4f-2o-7Bn"/>
+                            <constraint firstItem="q5o-ML-lom" firstAttribute="bottom" secondItem="1TC-Bv-atY" secondAttribute="bottom" constant="-30" id="Mf2-8Y-gTM"/>
+                            <constraint firstItem="aiT-u3-MYx" firstAttribute="width" secondItem="xJH-oX-YIB" secondAttribute="width" id="MsJ-Av-auH"/>
+                            <constraint firstItem="q5o-ML-lom" firstAttribute="top" secondItem="Dzh-S4-ZTy" secondAttribute="bottom" constant="30" id="OEt-tO-CiS"/>
+                            <constraint firstItem="xJH-oX-YIB" firstAttribute="centerX" secondItem="phi-Kx-ool" secondAttribute="centerX" id="PCs-z9-kmH"/>
+                            <constraint firstItem="xJH-oX-YIB" firstAttribute="top" secondItem="FbY-NA-aib" secondAttribute="bottom" constant="10" id="TQ5-6K-Gd6"/>
+                            <constraint firstItem="aiT-u3-MYx" firstAttribute="centerX" secondItem="phi-Kx-ool" secondAttribute="centerX" id="Twj-D8-BsA"/>
+                            <constraint firstItem="Dzh-S4-ZTy" firstAttribute="centerX" secondItem="phi-Kx-ool" secondAttribute="centerX" id="VYh-i2-lCt"/>
+                            <constraint firstItem="PhC-2F-7fh" firstAttribute="width" secondItem="phi-Kx-ool" secondAttribute="width" multiplier="0.85" id="Wz3-KY-FOF"/>
+                            <constraint firstItem="rpr-SQ-Zti" firstAttribute="top" secondItem="xJH-oX-YIB" secondAttribute="bottom" constant="20" id="Yhv-QU-g6W"/>
+                            <constraint firstItem="0oU-3u-VHA" firstAttribute="centerX" secondItem="phi-Kx-ool" secondAttribute="centerX" id="bak-bJ-ZZ8"/>
+                            <constraint firstItem="T6R-46-ShJ" firstAttribute="centerY" secondItem="0oU-3u-VHA" secondAttribute="centerY" id="cZW-Xd-jK5"/>
+                            <constraint firstItem="xJH-oX-YIB" firstAttribute="height" secondItem="PhC-2F-7fh" secondAttribute="height" id="dOi-1Q-vAQ"/>
+                            <constraint firstItem="T6R-46-ShJ" firstAttribute="centerX" secondItem="0oU-3u-VHA" secondAttribute="centerX" id="eMm-I7-ufi"/>
+                            <constraint firstItem="NXm-tQ-c4U" firstAttribute="leading" secondItem="1TC-Bv-atY" secondAttribute="leading" constant="20" id="iCj-LQ-RaT"/>
+                            <constraint firstItem="Dzh-S4-ZTy" firstAttribute="width" secondItem="q5o-ML-lom" secondAttribute="width" id="pNi-ez-1bw"/>
+                            <constraint firstItem="Dzh-S4-ZTy" firstAttribute="top" secondItem="0oU-3u-VHA" secondAttribute="bottom" constant="8" id="t0O-J0-WPw"/>
+                            <constraint firstItem="PhC-2F-7fh" firstAttribute="top" secondItem="NXm-tQ-c4U" secondAttribute="bottom" constant="10" id="tWn-8D-wgp"/>
+                            <constraint firstItem="Dzh-S4-ZTy" firstAttribute="height" secondItem="q5o-ML-lom" secondAttribute="height" id="wcd-wS-1n1"/>
+                            <constraint firstItem="aiT-u3-MYx" firstAttribute="height" secondItem="PhC-2F-7fh" secondAttribute="height" id="yFG-ID-IrL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1TC-Bv-atY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ce4-oW-7nN" appends="YES" id="aOy-SZ-0pZ"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hill Cipher" id="c2l-LI-gs6">
+                        <barButtonItem key="rightBarButtonItem" title="History" id="OO3-pk-t1g">
+                            <connections>
+                                <action selector="rightBarButtonTouched:" destination="Jtx-qZ-Daz" id="NUt-Gr-Hs2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="decryptButton" destination="q5o-ML-lom" id="oc9-76-7Pk"/>
+                        <outlet property="encryptButton" destination="Dzh-S4-ZTy" id="448-rh-zvM"/>
+                        <outlet property="encryptionKeyTextField" destination="xJH-oX-YIB" id="OrP-tT-meF"/>
+                        <outlet property="encryptionMatrixTextField" destination="aiT-u3-MYx" id="Any-bj-0si"/>
+                        <outlet property="plaintextTextField" destination="PhC-2F-7fh" id="MuD-Mu-7wz"/>
+                        <outlet property="spinner" destination="T6R-46-ShJ" id="7o8-xz-F8T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BFN-2I-Jes" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ce4-oW-7nN">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="Jtx-qZ-Daz" id="FWu-FW-MS9"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1022" y="21"/>
+        </scene>
+    </scenes>
+</document>

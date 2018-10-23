@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		13284EA5E9399B928174CA71 /* Pods_TheHillCipherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95ABFC392E3B76834750BFD6 /* Pods_TheHillCipherUITests.framework */; };
+		955D9E53217FB3CA0067840B /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955D9E52217FB3CA0067840B /* StoryboardHelper.swift */; };
+		955D9E55217FB51A0067840B /* HistoryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955D9E54217FB51A0067840B /* HistoryViewController.storyboard */; };
+		955D9E57217FB5590067840B /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955D9E56217FB5590067840B /* MainViewController.storyboard */; };
 		9580996A21790EEA00288669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580996921790EEA00288669 /* AppDelegate.swift */; };
-		9580996F21790EEA00288669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9580996D21790EEA00288669 /* Main.storyboard */; };
 		9580997121790EED00288669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9580997021790EED00288669 /* Assets.xcassets */; };
 		9580997421790EED00288669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9580997221790EED00288669 /* LaunchScreen.storyboard */; };
 		9580997F21790EEE00288669 /* TheHillCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580997E21790EEE00288669 /* TheHillCipherTests.swift */; };
@@ -51,9 +53,11 @@
 		39507283A985E5B97E0FF02A /* Pods-TheHillCipherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHillCipherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheHillCipherUITests/Pods-TheHillCipherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		412EC8096DB46306DA4828B2 /* Pods-TheHillCipherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHillCipherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheHillCipherTests/Pods-TheHillCipherTests.release.xcconfig"; sourceTree = "<group>"; };
 		8753ACE178DC45EF00151868 /* Pods_TheHillCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheHillCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		955D9E52217FB3CA0067840B /* StoryboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		955D9E54217FB51A0067840B /* HistoryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HistoryViewController.storyboard; sourceTree = "<group>"; };
+		955D9E56217FB5590067840B /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
 		9580996621790EEA00288669 /* TheHillCipher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheHillCipher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9580996921790EEA00288669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9580996E21790EEA00288669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9580997021790EED00288669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9580997321790EED00288669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9580997521790EED00288669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,7 +156,6 @@
 				95A75FD7217E71A900E69C44 /* Helpers */,
 				95A75FDC217E71AA00E69C44 /* Models */,
 				9580996921790EEA00288669 /* AppDelegate.swift */,
-				9580996D21790EEA00288669 /* Main.storyboard */,
 				9580997021790EED00288669 /* Assets.xcassets */,
 				9580997221790EED00288669 /* LaunchScreen.storyboard */,
 				9580997521790EED00288669 /* Info.plist */,
@@ -182,7 +185,9 @@
 			isa = PBXGroup;
 			children = (
 				95A75FE3217E71CF00E69C44 /* MainViewController.swift */,
+				955D9E56217FB5590067840B /* MainViewController.storyboard */,
 				95933B98217E5B1400E1153A /* HistoryViewController.swift */,
+				955D9E54217FB51A0067840B /* HistoryViewController.storyboard */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				95A75FD9217E71A900E69C44 /* Extensions.swift */,
 				95A75FDA217E71A900E69C44 /* Matrix.swift */,
 				95A75FDB217E71A900E69C44 /* Alphabet.swift */,
+				955D9E52217FB3CA0067840B /* StoryboardHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -348,9 +354,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				955D9E57217FB5590067840B /* MainViewController.storyboard in Resources */,
+				955D9E55217FB51A0067840B /* HistoryViewController.storyboard in Resources */,
 				9580997421790EED00288669 /* LaunchScreen.storyboard in Resources */,
 				9580997121790EED00288669 /* Assets.xcassets in Resources */,
-				9580996F21790EEA00288669 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +465,7 @@
 				95933B99217E5B1400E1153A /* HistoryViewController.swift in Sources */,
 				95A75FEA217E71F400E69C44 /* HillCipherService.swift in Sources */,
 				95A75FDF217E71AA00E69C44 /* Extensions.swift in Sources */,
+				955D9E53217FB3CA0067840B /* StoryboardHelper.swift in Sources */,
 				95A75FDE217E71AA00E69C44 /* UserDefaultsManager.swift in Sources */,
 				95A75FE8217E71EA00E69C44 /* CustomButton.swift in Sources */,
 				95A75FE1217E71AA00E69C44 /* Alphabet.swift in Sources */,
@@ -498,14 +506,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9580996D21790EEA00288669 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9580996E21790EEA00288669 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9580997221790EED00288669 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
