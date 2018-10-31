@@ -9,11 +9,34 @@
 import Foundation
 
 protocol HillCipherServiceProtocol {
+    /// The plainText
     var plainText: String { get set }
+
+    /// The encryptionMatrix which we will use to encrypt the plainText
+    /// or decrypt the encryptionKey
     var encryptionMatrix: Matrix { get set }
+
+    /// The encryptionKey
     var encryptionKey: String { get set }
 
+    /// Encrypts a plainText and returns an encryptionKey
+    ///
+    /// - Parameters:
+    ///   - plainText: the plainText in this protocol
+    ///   - encryptionMatrix: the encryptionMatrix in this protocol
+    /// - Returns: The encryptionKey as a string
+    /// - Throws: `MatrixError.NoInverseAvailable` or `MatrixError.MatrixShouldBe2x2
+    ///            when the matrix has no inverse or the matrix is not 2x2
     func encrypt(completion: @escaping (String) -> Void) throws
+
+    /// Decrypts an encryptionKey and returns a plainText
+    ///
+    /// - Parameters:
+    ///   - encryptionKey: the encryptionKey in this protocol
+    ///   - encryptionMatrix: the encryptionMatrix in this protocol
+    /// - Returns: The plainText as a string
+    /// - Throws: `MatrixError.NoInverseAvailable` or `MatrixError.MatrixShouldBe2x2
+    ///            when the matrix has no inverse or the matrix is not 2x2
     func decrypt(completion: @escaping (String) -> Void) throws
 }
 
