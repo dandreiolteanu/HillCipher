@@ -55,10 +55,14 @@ class HillCipherServiceImpl: HillCipherServiceProtocol {
         let splitedArray = listRepr.completedChunk(into: 4, completeWithElement: 0)
 
         if encryptionMatrix.isInversable {
-            let matrixSplittedArray = getMatrixArray(from: splitedArray)
-            let matrixArray = matrixSplittedArray.map { Matrix(matrix: [$0]) }
-            encryptionKey = getKeys(from: matrixArray)
-            completion(encryptionKey)
+            if gcd(Int(encryptionMatrix.determinant()), 27) == 1 {
+                let matrixSplittedArray = getMatrixArray(from: splitedArray)
+                let matrixArray = matrixSplittedArray.map { Matrix(matrix: [$0]) }
+                encryptionKey = getKeys(from: matrixArray)
+                completion(encryptionKey)
+            } else {
+                throw MatrixError.GreatestCommonDivisor
+            }
         } else {
             throw MatrixError.NoInverseAvailable
         }
@@ -69,11 +73,15 @@ class HillCipherServiceImpl: HillCipherServiceProtocol {
         let splittedArray = listRepr.completedChunk(into: 4, completeWithElement: 0)
 
         if encryptionMatrix.isInversable {
-            let inversedMatrix = try! encryptionMatrix.decryptionInverse(with: 27)
-            let matrixSplittedArray = getMatrixArray(from: splittedArray)
-            let matrixArray = matrixSplittedArray.map { Matrix(matrix: [$0]) }
-            plainText = getDecryptionKeys(from: matrixArray, inversed: inversedMatrix)
-            completion(plainText)
+            if gcd(Int(encryptionMatrix.determinant()), 27) == 1 {
+                let inversedMatrix = try! encryptionMatrix.decryptionInverse(with: 27)
+                let matrixSplittedArray = getMatrixArray(from: splittedArray)
+                let matrixArray = matrixSplittedArray.map { Matrix(matrix: [$0]) }
+                plainText = getDecryptionKeys(from: matrixArray, inversed: inversedMatrix)
+                completion(plainText)
+            } else {
+                throw MatrixError.GreatestCommonDivisor
+            }
         } else {
             throw MatrixError.NoInverseAvailable
         }
@@ -124,5 +132,14 @@ class HillCipherServiceImpl: HillCipherServiceProtocol {
         }
 
         return list
+    }
+
+    func gcd(_ a: Int, _ b: Int) -> Int {
+        let r = a % b
+        if r != 0 {
+            return gcd(b, r)
+        } else {
+            return b
+        }
     }
 }

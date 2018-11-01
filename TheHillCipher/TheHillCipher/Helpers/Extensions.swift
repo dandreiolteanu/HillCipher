@@ -32,7 +32,7 @@ extension Collection where Iterator.Element == Int {
     }
 }
 
-// (1 / 9) % 26 <--> (9 * x) % 26 == 1
+// (1 / 9) % 27 <--> (9 * x) % 27 == 1
 extension Double {
     func inverseModulus(_ mod: Int) -> Double {
         for i in 1...mod {

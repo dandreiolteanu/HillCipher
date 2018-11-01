@@ -13,12 +13,14 @@ enum MatrixError: Error {
     case IllegalArgumentError
     case NoInverseAvailable
     case MatrixShouldBe2x2
+    case GreatestCommonDivisor
 
     var localizedDescription: String {
         switch self {
         case .IllegalArgumentError: return "Illegal Argument Error"
         case .NoInverseAvailable: return "No Inverse Available"
         case .MatrixShouldBe2x2: return "Matrix should be 2x2"
+        case .GreatestCommonDivisor: return "GCD of det(K) and n should be 1"
         }
     }
 }
@@ -284,7 +286,10 @@ class Matrix {
         adjMatrix.matrix[0][1] = -matrix[0][1]
         adjMatrix.matrix[1][0] = -matrix[1][0]
 
-        let modulusDeterminant = determinant().inverseModulus(numberOfLetters)
+        var det = determinant()
+        if det < 0 { det += Double(numberOfLetters) }
+
+        let modulusDeterminant = det.inverseModulus(numberOfLetters)
         for i in 0..<self.size.lines {
             for j in 0..<self.size.columns {
                 if adjMatrix.matrix[i][j] < 0 {
